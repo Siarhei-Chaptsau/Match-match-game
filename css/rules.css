@@ -1,0 +1,41 @@
+.rules {  
+  position: relative;
+  width: 100%;
+  max-width: 1500px;
+  margin: 0 auto;
+  margin-top: 20px;
+  background-image: linear-gradient(to right, #66CDAA 0%, #AFEEEE 60%, #F0FFFF 100%);
+}
+
+.rules__wrapper {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px 0 30px;
+}
+
+.rules__title {
+  margin-bottom: 25px;
+  text-align: center;
+  font-size: 30px;
+  color: #696969;
+}
+
+.rules__title--play {
+  margin-top: 30px;
+  font-size: 26px;
+}
+
+.rules__text-conteiner {
+  padding: 0 2%;
+}
+
+.rules__text {
+  margin: 10px;
+  font-size: 16px;
+  text-align: left;
+  line-height: 1.5;
+}
+
+.rules__text--general {
+  text-align: center;
+}

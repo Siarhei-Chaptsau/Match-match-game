@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link href="css/style.css" rel="stylesheet">
+    <title>Match-Match Game</title>
+  </head>
+
+  <body>
+    <section class="rules">
+      <div class="rules__wrapper">
+        <h1 class="rules__title">How to play Match Match Game</h1>
+        <p class="rules__text  rules__text--general">Memory is a counter game where
+           the object is to find pairs. When the game begins, all pictures are hidden.
+        </p>
+        <p class="rules__text  rules__text--general">Please don't forget to choose a
+           card shirt and the difficulty level of the game.
+        </p>
+        <h2 class="rules__title  rules__title--play">To Play:</h2>
+        <ol class="rules__text-conteiner">
+          <li class="rules__text">Select two cards to try to match the pictures.</li>
+          <li class="rules__text">If you match the pictures you can go again.</li>
+          <li class="rules__text">If they don't match it is the computer turn them.</li>
+          <li class="rules__text">The player that find that finds all pairs wins!</li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="form">
+      <div class="form__wrapper">
+        <form class="form__form-container" method="post">
+          <fieldset class="form__items">
+            <label class="form__item">
+              <span class="form__title">First Name</span>
+              <input class="form__input" type="text" name="name" placeholder="Your first name *" required>
+            </label>
+
+            <label class="form__item">
+              <span class="form__title">Last Name</span>
+              <input class="form__input" type="text" name="surname" placeholder="Your name last name *" required>
+            </label>
+
+            <label class="form__item">
+              <span class="form__title">Email</span>
+              <input class="form__input" type="email" name="email" placeholder="Your email *" required>
+            </label>
+          </fieldset>
+        </form>
+
+        <div class="form__option-container">
+          <div class="form__option">
+            <p class="form__title  form__title--option">Shirt Cards</p>
+            <ul class="form__list  form__list--shirt">
+              <li class="form__text">
+                <img class="form__image  form__active" src="img/0.png" alt="option 1">
+              </li>
+              <li class="form__text">
+                <img class="form__image" src="img/1.png" alt="option 2">
+              </li>
+              <li class="form__text">
+                <img class="form__image" src="img/2.png" alt="option 3">
+              </li>
+            </ul>
+          </div>
+
+          <div class="form__option">
+            <p class="form__title  form__title--option">Game Difficulty</p>
+            <ul class="form__list  form__list--level">
+              <li class="form__text  form__text--level  form__active">Low (5 x 2)</li>
+              <li class="form__text  form__text--level">Medium (6 x 3)</li>
+              <li class="form__text  form__text--level">Hard (8 x 3)</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="form__btn-container">
+          <button class="form__btn">START GAME</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="cards">
+      <div class="cards__wrapper">
+        <div class="cards__nav-container">
+          <button class="cards__btn" type="submit">← Go Back</button>
+          <p class="cards__text">Your Time:
+            <span class="cards__timer">
+              <span id="min">00</span> : <span id="sec">00</span>
+            </span>
+          </p>
+        </div>
+        <div class="cards__items">
+        </div>
+      </div>
+    </section>
+
+    <section class="popup  popup--game">
+      <div class="popup__wrapper">
+        <h3 class="popup__title">Congratulations!</h3>
+        <h3 class="popup__title">Your Time:</h3>
+        <p class="popup__title  popup__title--time"></p>
+        <button class="popup__btn  popup__btn--game" type="submit">New Game</button>
+        <button class="popup__btn  popup__btn--exit" type="submit">Exit</button>
+      </div>
+    </section>
+
+    <div class="popup  popup--failure">
+      <div class="popup__wrapper  popup__wrapper--failure">
+        <p class="popup__text  popup__text--failure">Fill in all fields of the form.</p>
+        <button class="popup__btn  popup__btn--failure" type="submit">OK</button>
+      </div>
+    </div>
+
+    <script src="js/game.js"></script>
+  </body>
+</html>

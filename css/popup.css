@@ -1,0 +1,81 @@
+.popup { /* в скрытом состоянии */
+  display: none;
+  position: fixed;
+  width: 460px;
+  left: 50%;
+  top: 20%;
+  transform: translate(-50%, -50%);
+  z-index: 5;
+}
+
+.popup--show { /* Отображет popup */
+  display: block;
+}
+
+.popup__wrapper {
+  position: absolute;
+  width: 100%;
+  padding: 20px 50px 5px;
+  background-color: white;
+  box-shadow: 0 5px 20px 0 #32CD52;
+  box-sizing: border-box;
+}
+
+.popup__wrapper--failure {
+  box-shadow: 0 5px 20px 0 #DC143C;
+}
+
+.popup__title {
+  margin-top: 14px;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.popup__title--time {
+  color: #dc143c;
+  margin-bottom: 40px;
+}
+
+.popup__text {
+  font-size: 30px;
+  text-align: center;
+  line-height: 24px;
+  margin: 20px 0 40px;
+}
+
+.popup__text--failure {
+  font-size: 24px;
+}
+
+.popup__btn {
+  display: block;
+  width: 250px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  padding: 15px 40px;
+  text-align: center;
+  border: none;
+  font-size: 24px;
+  font-weight: 700;
+  background-color: #DC143C;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  overflow: hidden;
+  filter: opacity(70%);
+}
+
+.popup__btn:hover,
+.popup__btn--game:hover {
+  filter: opacity(85%);
+}
+
+.popup__btn:active,
+.popup__btn--game:active {
+  filter: opacity(100%);
+}
+
+.popup__btn--game {
+  background-color: #32CD52;
+}

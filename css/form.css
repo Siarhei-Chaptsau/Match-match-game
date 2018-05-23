@@ -1,0 +1,133 @@
+.form {  
+  position: relative;
+  width: 100%;
+  max-width: 1500px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  background-image: linear-gradient(to right, #66CDAA 0%, #AFEEEE 60%, #F0FFFF 100%);
+}
+
+.form__wrapper {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  padding-bottom: 30px;
+}
+
+.form__form-container {
+  width: 360px;
+}
+
+.form__items {
+  width: 100%;
+  border: 0;
+  text-align: right;
+}
+
+.form__item {
+  display: block;
+  width: 100%;
+  margin: 25px 0;
+}
+
+.form__title {
+  margin: 0 10px;
+  font-weight: 700;
+}
+
+.form__title--option {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.form__input {
+  width: 230px;
+  height: 36px;
+  padding: 10px;
+  text-align: left;
+  border: 1px solid #c8c6c6;
+  outline: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.form__input:focus {
+  border-color: #32CD52;
+}
+
+.form__option-container {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  width: 50%;
+  min-width: 300px;
+}
+
+.form__option:last-child {
+  margin-right: auto;
+  margin-left: 20%;
+}
+
+.form__text {
+  display: block;
+  width: 100px;
+  height: 55px;
+  text-align: center;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+.form__text:hover {
+  outline: 1px solid #32CD52;
+}
+
+.form__text:active {
+  background-color: #66CDAA;
+}
+
+.form__text--level {
+  width: 130px;
+  padding: 18px 0;
+}
+
+.form__active { /* при срабатывании обработчика событий */
+  background-color: #66CDAA;
+  outline: 1px solid #32CD52;
+}
+
+.form__image {
+  width: 40px;
+  height: 40px;
+  padding: 7px 30px;
+}
+
+.form__btn-container {
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 50px;
+}
+
+.form__btn {
+  display: block;
+  margin: 0 auto;
+  padding: 15px 60px;
+  text-align: center;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #32CD52;
+  border: none;
+  overflow: hidden;
+  outline: none;
+  filter: opacity(80%);
+  }
+
+  .form__btn:hover {
+    filter: opacity(100%);
+  }
+
+  .form__btn:active {
+    background-color: #228B22;
+  }
