@@ -217,7 +217,7 @@ cardsItems.addEventListener('click', function(e) {
             arrOfCards[firstTurnedCardIndex].classList.toggle('cards__item--turned');
             firstTurnedCardId = null; // удаляем id первой карты из глобальной области видимости
             firstTurnedCardIndex = null; // удаляем индекс первой карты из глобальной области видимости            
-          }, 500);
+          }, 900);
         }
         break;
       }
