@@ -217,7 +217,11 @@ cardsItems.addEventListener('click', function(e) {
             arrOfCards[firstTurnedCardIndex].style.backgroundImage = memoryObj.shirt; // закрываем первую карту
             arrOfCards[firstTurnedCardIndex].classList.toggle('cards__item--turned');
             firstTurnedCardId = null; // удаляем id первой карты из глобальной области видимости
+<<<<<<< HEAD
             firstTurnedCardIndex = null; // удаляем индекс первой карты из глобальной области видимости
+=======
+            firstTurnedCardIndex = null; // удаляем индекс первой карты из глобальной области видимости            
+>>>>>>> 2685b78d0c3d4fdae50e00ada93b8f3c7dd01fc0
           }, 900);
         }
         break;
