@@ -35,18 +35,18 @@ let obj = { // объект с инфой игрока
 let memoryObj = {}; // запоминает какую выбрали рубашку и сложность для игры
 let newArrCardsRandomAndSelected = []; // массив рандомных карт согласно опций
 let arr = [
-{'dataId':1, 'backgroundImage':"Barney_Gumble.png"},
-{'dataId':2, 'backgroundImage':"Clancy_Wiggum.png"},
-{'dataId':3, 'backgroundImage':"Bart_Simpson.png"},
-{'dataId':4, 'backgroundImage':"Eleanor_Abernathy.png"},
-{'dataId':5, 'backgroundImage':"Groundskeeper_Willie.png"},
-{'dataId':6, 'backgroundImage':"Homer_Simpson.png"},
-{'dataId':7, 'backgroundImage':"Horatio_McCallister.png"},
-{'dataId':8, 'backgroundImage':"Fat_Tony.png"},
-{'dataId':9, 'backgroundImage':"Mr_Burns.png"},
-{'dataId':10, 'backgroundImage':"Moe_Szyslak.png"},
-{'dataId':11, 'backgroundImage':"Abraham_Simpson.png"},
-{'dataId':12, 'backgroundImage':"Seymour_Skinner.png"}
+{'dataId':1, 'backgroundImage':"Barney_Gumble.jpg"},
+{'dataId':2, 'backgroundImage':"Clancy_Wiggum.jpg"},
+{'dataId':3, 'backgroundImage':"Bart_Simpson.jpg"},
+{'dataId':4, 'backgroundImage':"Eleanor_Abernathy.jpg"},
+{'dataId':5, 'backgroundImage':"Groundskeeper_Willie.jpg"},
+{'dataId':6, 'backgroundImage':"Homer_Simpson.jpg"},
+{'dataId':7, 'backgroundImage':"Horatio_McCallister.jpg"},
+{'dataId':8, 'backgroundImage':"Fat_Tony.jpg"},
+{'dataId':9, 'backgroundImage':"Mr_Burns.jpg"},
+{'dataId':10, 'backgroundImage':"Moe_Szyslak.jpg"},
+{'dataId':11, 'backgroundImage':"Abraham_Simpson.jpg"},
+{'dataId':12, 'backgroundImage':"Seymour_Skinner.jpg"}
 ];
 
 // функция рандомного перемешивания
@@ -220,7 +220,7 @@ cardsItems.addEventListener('click', function(e) {
 <<<<<<< HEAD
             firstTurnedCardIndex = null; // удаляем индекс первой карты из глобальной области видимости
 =======
-            firstTurnedCardIndex = null; // удаляем индекс первой карты из глобальной области видимости            
+            firstTurnedCardIndex = null; // удаляем индекс первой карты из глобальной области видимости
 >>>>>>> 2685b78d0c3d4fdae50e00ada93b8f3c7dd01fc0
           }, 900);
         }
