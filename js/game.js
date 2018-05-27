@@ -193,6 +193,7 @@ cardsItems.addEventListener('click', function(e) {
         }
       }
       if (count == 2) { // если уже есть 2 открытые карты
+
         if (e.target.getAttribute('data-id') == firstTurnedCardId) { // сравниваем id активной карты и открытой, если они равны
           setTimeout(function() {
             e.target.style.visibility = 'hidden'; // скрываем вторую карту
@@ -216,8 +217,8 @@ cardsItems.addEventListener('click', function(e) {
             arrOfCards[firstTurnedCardIndex].style.backgroundImage = memoryObj.shirt; // закрываем первую карту
             arrOfCards[firstTurnedCardIndex].classList.toggle('cards__item--turned');
             firstTurnedCardId = null; // удаляем id первой карты из глобальной области видимости
-            firstTurnedCardIndex = null; // удаляем индекс первой карты из глобальной области видимости            
-          }, 500);
+            firstTurnedCardIndex = null; // удаляем индекс первой карты из глобальной области видимости
+          }, 900);
         }
         break;
       }
